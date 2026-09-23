@@ -1,54 +1,50 @@
-[README.md](https://github.com/user-attachments/files/32573157/README.md)
-# Electronic-Frills-Shift-Registers-Counters# Electronic Frills using Shift Registers and Counters
+# Electronic Frills using Shift Registers and Counters
 
 ## Project Overview
-This Digital Logic Design Lab project demonstrates how basic digital ICs can generate animated lighting patterns across a 7×7 LED matrix. The circuit uses a 555 timer in astable mode to produce clock pulses and three cascaded CD4017 decade counters to sequence the LED outputs.
+This Digital Logic Design Lab project demonstrates sequential lighting patterns using a 7×7 matrix of 49 red LEDs. The documented circuit uses a 555 timer in astable mode to generate clock pulses and three cascaded CD4017 decade counters to sequence the LED outputs.
 
-The design was simulated in Proteus and then assembled and tested on a breadboard.
+The circuit was simulated in Proteus and assembled on a breadboard.
 
-## Main Components
+## Components
 | Component | Specification | Quantity |
 |---|---|---:|
 | Timer IC | 555 | 1 |
-| Decade counter | CD4017 | 3 |
+| Decade counter IC | CD4017 | 3 |
 | LEDs | 5 mm red | 49 |
 | Capacitor | 100 µF | 1 |
 | Resistor | 100 Ω | 1 |
 | Power supply | 12 V battery | 1 |
-| Breadboard | — | 2 |
+| Breadboards | — | 2 |
 | Jumper wires | — | Multiple |
 
 ## Working Principle
-1. The 555 timer is configured in astable mode to generate a continuous clock signal.
-2. The clock pulses are applied to cascaded CD4017 decade counters.
-3. The counters produce sequential output signals that control the LED matrix.
-4. The sequence creates moving or chaser-style lighting effects.
-5. The timing components can be adjusted to change the pulse rate and visible animation speed.
+1. The 555 timer is configured in astable mode to produce a continuous clock signal.
+2. The clock pulses drive the cascaded CD4017 decade counters.
+3. The counter outputs activate LEDs in sequence to create a chaser-style lighting effect.
+4. Timing components affect the clock rate and therefore the speed of the lighting sequence.
 
 ## Design and Testing
-- Created the schematic in Proteus.
-- Connected three CD4017 counters for extended sequencing.
+- Developed the circuit schematic in Proteus.
+- Connected three CD4017 counters for sequential control.
 - Arranged 49 LEDs in a 7×7 matrix.
-- Checked timer pulse generation and counter sequencing in simulation.
-- Assembled the circuit on a breadboard and adjusted timing for visible effects.
-- Tested the LED sequence and checked for stable operation.
+- Simulated the timer and counter operation in Proteus.
+- Assembled the circuit on a breadboard and tested the LED sequence.
 
 ## Applications
-- Decorative lighting and stage effects
-- Moving-light signboards
-- Educational digital electronics demonstrations
-- Logic-based timing and sequence control
-- Light-based art installations
+- Decorative and sequential lighting
+- Moving-light displays
+- Digital electronics demonstrations
+- Learning clock generation and counter-based sequencing
 
 ## Repository Contents
-- `README.md` — project overview and operation
-- `report/ECE233_Electronic_Frills_Report.docx` — original project report
+- `README.md` — project overview, components, and working principle
+- `report/ECE233_Electronic_Frills_Report.docx` — project report (add this file if it has not yet been uploaded)
 
-## Notes
-The project report describes the circuit as using a 555 timer and CD4017 counters. It does not identify a separate shift-register IC, so this README follows the documented implementation.
+## Implementation Note
+Although the project title mentions shift registers, the supplied project details identify the 555 timer and CD4017 counters as the main sequencing components. No separate shift-register IC is specified here.
 
 ## References
-1. CD4017 Decade Counter datasheet (Texas Instruments)
-2. 555 Timer IC datasheet (Texas Instruments)
+1. CD4017 decade counter datasheet
+2. 555 timer IC datasheet
 3. Proteus Design Suite
-4. Digital Logic Design lectures and laboratory experience
+4. Digital Logic Design laboratory materials
